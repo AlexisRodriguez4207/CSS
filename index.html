@@ -5,42 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eccomerce - Home</title>
+    <link rel="stylesheet" href="css/Normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
     <header>
-      <h1>Tienda <span>Muebles</span></h1>
+      <h1 class="Nombre-Sitio">Tienda <span>Muebles</span></h1>
     </header>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="Nosotros.html">Nosotros</a>
-      <a href="Tienda.html">Tienda</a>
-      <a href="Blog.html">Blog</a>
-      <a href="Galeria.html">Galeria</a>
-      <a href="Contacto.html">Contacto</a>
-    </nav>
 
-    <section>
+    <div class="Contenedor-Navegacion">
+      <nav class="Nav-Principal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="Nosotros.html">Nosotros</a>
+        <a href="Tienda.html">Tienda</a>
+        <a href="Blog.html">Blog</a>
+        <a href="Galeria.html">Galeria</a>
+        <a href="Contacto.html">Contacto</a>
+      </nav>
+    </div>
+
+    <div class="hero"></div>
+
+    <section class="contenedor categorias">
       <h2>Categorias de <span>Productos</span></h2>
+      <div class="Listado-Cat">
+        <div class="Categoria">
+          <img src="img/categoria1.jpg" alt="Imagen" />
+          <a href="#">Oficina</a>
+        </div>
 
-      <div>
-        <img src="img/categoria1.jpg" alt="Imagen" />
-        <a href="#">Oficina</a>
-      </div>
+        <div class="Categoria">
+          <img src="img/categoria2.jpg" alt="Imagen" />
+          <a href="#">Hogar</a>
+        </div>
 
-      <div>
-        <img src="img/categoria2.jpg" alt="Imagen" />
-        <a href="#">Hogar</a>
-      </div>
-
-      <div>
-        <img src="img/categoria3.jpg" alt="Imagen" />
-        <a href="#">Cocina</a>
+        <div class="Categoria">
+          <img src="img/categoria3.jpg" alt="Imagen" />
+          <a href="#">Cocina</a>
+        </div>
       </div>
     </section>
 
-    <section>
+    <section class="Sobre-Nosotros">
       <div>
         <h2>Sobre Nosotros</h2>
         <p>

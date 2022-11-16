@@ -166,6 +166,64 @@ img {
   padding-top: 5rem;
 }
 
+.Listado-Productos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+  /*gap: 2rem es igual a lo siguiente 
+  column-gap: 2rem;
+  row-gap: 2rem;
+  */
+}
+
+.Producto:nth-child(1) {
+  /* Inicio y Finilizacion de las columnas */
+  grid-column: 1/7;
+  display: grid;
+  grid-template-columns: 2fr 2fr; /*fr = fraccion*/
+}
+
+.Producto:nth-child(1) img {
+  height: 43rem;
+  /* Esto va a tomar todo el ancho posible */
+  width: 100%;
+  object-fit: cover;
+}
+
+.Producto:nth-child(2) {
+  /* Es lo mismo que grid-column */
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.Producto:nth-child(2) img,
+.Producto:nth-child(3) img {
+  height: 30rem;
+  /* Esto va a tomar todo el ancho posible */
+  width: 100%;
+  object-fit: cover;
+}
+
+.Producto:nth-child(3) {
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+
+.Producto:nth-child(4) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.Producto:nth-child(5) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.Producto:nth-child(6) {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
 .Producto {
   background-color: #037bc0;
 }

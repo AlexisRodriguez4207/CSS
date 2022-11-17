@@ -277,3 +277,17 @@ img {
   text-align: center;
   margin-top: 5rem;
 }
+
+/* Sobre Nosotros */
+.Contenido-Nosotros {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  column-gap: 4rem;
+}
+
+.Info-Nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

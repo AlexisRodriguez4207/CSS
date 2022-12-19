@@ -34,28 +34,93 @@
     <main class="Contenido-Principal contenedor">
       <h2 class="text-center">Contacto</h2>
 
-      <form>
+      <form class="Formulario">
         <!-- fieldset es para agrupar elementos -->
         <fieldset>
           <legend>Tus Datos</legend>
           <div class="campo">
             <label for="Nombre">Nombre:</label>
-            <input id="Nombre" type="text" placeholder="Ingresa tu Nombre" />
+            <input
+              id="Nombre"
+              type="text"
+              placeholder="Ingresa tu Nombre"
+              required
+            />
           </div>
 
           <div class="campo">
             <label for="Asunto">Asunto:</label>
-            <input id="Asunto" type="text" placeholder="Tu Asunto" />
+            <input id="Asunto" type="text" placeholder="Tu Asunto" required />
+          </div>
+
+          <div class="campo">
+            <label for="Email">Correo:</label>
+            <input
+              class="input"
+              id="Email"
+              type="email"
+              placeholder="Tu Correo"
+            />
+          </div>
+
+          <div class="campo">
+            <label for="Tel">Telefono:</label>
+            <input id="Tel" type="tel" placeholder="Tu Telefono" />
+          </div>
+
+          <div class="campo">
+            <label for="Mensaje">Mensaje:</label>
+            <textarea cols="20" rows="10"></textarea>
           </div>
         </fieldset>
 
         <fieldset>
           <legend>Pais</legend>
+          <div class="campo">
+            <label for="Pais">Pais:</label>
+            <select id="Pais">
+              <option value="" selected>-- Seleccione --</option>
+              <option value="MX">Mexico</option>
+              <option value="PR">Peru</option>
+              <option value="CO">Colombia</option>
+              <option value="ES">Espana</option>
+              <option value="AR">Argentina</option>
+              <option value="CL">Chile</option>
+            </select>
+          </div>
         </fieldset>
 
         <fieldset>
           <legend>Información Extra</legend>
+          <div class="campo">
+            <label for="Cliente">Ciente</label>
+            <input type="radio" id="Cliente" name="Tipo" value="Cliente" />
+          </div>
+          <div class="campo">
+            <label for="Proveedor">Proveedor</label>
+            <input type="radio" id="Proveedor" name="Tipo" value="Proveedor" />
+          </div>
+
+          <div class="campo">
+            <label for="Categoria">Categoría de Interés</label>
+            <input list="Categorias" name="Categorias" />
+            <datalist id="Categorias">
+              <option value="Cocina"></option>
+              <option value="Exterior"></option>
+              <option value="Recamara"></option>
+              <option value="Oficina"></option>
+              <option value="Television"></option>
+            </datalist>
+          </div>
         </fieldset>
+
+        <input
+          class="btn"
+          type="submit"
+          name=""
+          id=""
+          value="Enviar Formulario"
+        />
       </form>
     </main>
 
